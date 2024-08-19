@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="./src/styles/globalStyles.css">
+    <link rel="stylesheet" href="./src/styles/buttons.css">
+    <link rel="stylesheet" href="./src/styles/index.css">
+
+    <title>PetInfo</title>
+</head>
+<body>
+    <main>
+        <div class="header">
+            <h1>Cadastro
+                <button class="redirect-edit__button " type="button">Ir para o login</button>
+            </h1>
+        </div>
+        <form>
+            <div class="usuario">
+                <label for="usarname">Usuário</label>
+                <input id="username" class="usuario__inputs" type="text" name="username" placeholder="Digite o seu usuário aqui...">
+            </div>
+            <div class="email">
+                <label for="email">Email</label>
+                <input id="email" class="usuario__inputs" type="email" name="email" placeholder="Digite o seu email aqui...">
+            </div>
+            <div class="perfil">
+                <label for="link">Link da foto de perfil</label>
+                <input id="link" class="usuario__inputs" type="text" name="avatar" placeholder="Insira o link aqui">
+            </div>
+            <div class="password">
+                <label for="password">Senha</label>
+                <input id="password" class="usuario__inputs" type="text" name="password" placeholder="Digite sua senha aqui...">
+            </div>
+            <div>
+                <button class="register" type="button">Cadastrar</button>
+            </div>
+            <div>
+                <button class="voltar__login" type="button">Ir para o login</button>
+            </div>
+        </form>
+    </main>
+    <aside>
+        <div class="info">
+            <h2>Pet Info</h2>
+            <h3>Oooooba!</h3>
+            <p>Agora vamos poder contribuir para o bem estar do seu pet por meio do conhecimento</p>
+        </div>
+        <div class="image">
+            <img src="./src/image/img/Rectangle 2.png" alt="Imagem de gato">
+            <div>
+                <img src="./src/image/img/Rectangle 3.png" alt="Imagem de gato">
+                <img src="./src/image/img/Rectangle 5.png" alt="Imagem de cachorro">
+                <img src="./src/image/img/Rectangle 4.png" alt="Imagem de gato">
+            </div>
+        </div>
+    </aside>
+
+    <dialog>
+        <div>
+
+        </div>
+    </dialog>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script type="module" src="./src/scripts/index.js"></script>
+</body>
+</html>

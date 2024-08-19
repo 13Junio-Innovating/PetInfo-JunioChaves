@@ -1,0 +1,172 @@
+body{
+    display: flex;
+}
+
+main{
+    margin-left: 464px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 321px;
+    height: 32px;
+    margin-top: 187px;
+    gap: 12px;
+    
+}
+
+h1{
+    display: flex;
+    width: 321px;
+    height: 32px;
+    justify-content: space-between;
+
+}
+
+section{
+    display: flex;
+    width: 369px;
+    height: 672px;
+    left: 464px;
+    padding: 44px 24px 44px 24px;
+    border-radius: 4px;
+    border: 1px;
+    gap: 26px;
+}
+
+label{
+    margin-top: 10px;
+}
+
+.usuario{
+    display: flex;
+    flex-direction: column;
+    width: 321px;
+    height: 80px;
+    margin-top: 25px ;
+    gap: 12px;
+
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.email{
+    display: flex;
+    flex-direction: column;
+    width: 321px;
+    height: 80px;
+    gap: 12px;
+}
+
+.perfil {
+    display: flex;
+    flex-direction: column;
+    width: 321px;
+    height: 80px;
+    gap: 12px;
+}
+
+.password{
+    display: flex;
+    flex-direction: column;
+    width: 321px;
+    height: 80px;
+    gap: 12px;
+}
+
+.register{
+    width: 352px;
+    height: 44px;
+    padding: 0px 16px 0px 16px;
+    border-radius: 4px;
+    border: 1px;
+    margin-top: 25px;
+
+    background: #364FC7;
+    
+    color: var(--gray900);
+}
+
+.voltar__login{
+    width: 352px;
+    height: 44px;
+    padding: 0px 16px 0px 16px;
+    border-radius: 4px;
+    border: 1px;
+    margin-top: 25px;
+
+    background: linear-gradient(0deg, #E9ECEF, #E9ECEF),
+    linear-gradient(0deg, #F8F9FA, #F8F9FA);
+}
+
+.info{
+    width: 320px;
+    margin-top: 280px;
+    margin-left: 119px;
+    border-radius: 12px;
+
+}
+
+h2{
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+h3{
+    width: 160px;
+    height: 48px;
+    margin-top: 26px;
+    
+    color: #364FC7;
+
+    
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+p{
+    width: 320px;
+    margin-top: 20px;
+
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: var(--gray300);
+
+}
+
+.image{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-left: 119px;
+
+    margin-top: 20px;
+}
+
+.image > div{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    flex-wrap: wrap;
+    width: 200px;
+}

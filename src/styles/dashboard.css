@@ -1,0 +1,241 @@
+.header__container{
+    margin-left: 469px;
+    margin-top: 64px;
+}
+
+.header__logo{
+    display: flex;
+    justify-content: space-between;
+    gap: 382px;
+    
+    width: 800px;
+    height: 44px;
+
+}
+
+.header__navigation{
+    display: flex;
+    align-items:flex-start;
+    justify-content: flex-end;
+
+    width: 800px;
+    height: 80px;
+    top: 69px;
+    left: 1043px;
+
+}
+
+.header__image{
+    width: 41px;
+    height: 41.05125045776367px;
+    background: none;
+
+}
+
+.feed__container{
+    padding: 10px;
+    width: 100vw;
+    background: var(--gray600);
+}
+
+.color__feed{
+    font-family: IBM Plex Sans;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 460px;
+
+}
+
+.modal__postCompleted{
+  border: none;
+  width: 800px;
+  border-radius: 5px;
+  margin-left: 469px;
+  margin-top: 15px;
+  background-color: var(--gray900);
+  border: 1px solid var(--gray500); 
+}
+
+.postCompleted__container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0px 24px 30px 0px;
+  border-radius: 8px;
+  gap: 30px;
+}
+
+.modal__controller {
+  border: none;
+  width: 800px;
+  border-radius: 5px;
+  margin-left: 469px;
+  margin-top: 15px;
+  background-color: var(--gray900);
+  border: 1px solid var(--gray500);
+}
+  
+.modal__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0px 24px 30px 0px;
+  border-radius: 8px;
+  gap: 30px;
+
+}
+  
+.modal__title--container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+  
+.modal__title--container > p {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+
+}
+  
+.modal__button--container > button {
+
+  background-color: var(--gray-100);
+  padding: 0.5rem;
+  border-radius: 4px;
+
+  width: 30px;
+  height: 30px;
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input__create{
+  width: 765px;
+  height: 26px;
+  top: 35px;
+  padding: 10px 17px 10px 17px;
+  border-radius: 4px;
+  border: 1px solid var(--gray500);
+  background-color: var(--gray800);
+
+}
+
+.modal__form > label {
+  font-size: 1rem;
+  color: var(--gray100);
+
+  margin-top: 15px;
+  margin-bottom: 10px;
+  align-self: flex-start;
+}
+
+.modal__form > .add__input {
+  height: 60px;
+  padding-left: 8px;
+
+  background-color: var(--gray800);
+  border-radius: 5px;
+  border: 1px solid var(--gray500);
+  outline: none;
+}
+
+.create__newPost {
+  width: 772px;
+  top: 134px;
+  left: 0.5px;
+  padding: 10px 17px 10px 17px;
+  border-radius: 4px;
+  border: 1px solid var(--gray500);
+  outline: none;
+}
+
+.modal__form--submit{
+  font-family: 'IBM Plex Sans', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  gap: 10px;
+
+  margin-top: 30px;
+}
+
+#addPublic {
+  background-color: var(--brand100);
+  color: var(--gray800);
+}
+
+#addCancelar{
+  background-color: var(--gray600);
+  color: var(--gray500);
+}
+
+.editPost{
+  border: none;
+  width: 800px;
+  height: 740px;
+  border-radius: 5px;
+  margin-left: 469px;
+  margin-top: -200px;
+  background-color: var(--gray900);
+  border: 1px solid var(--gray500);
+}
+
+.modal__form > textarea{
+  width: 772px;
+  height: 370px;
+  top: 134px;
+  left: 0.5px;
+  padding: 10px 17px 10px 17px;
+  border-radius: 4px;
+  border: 1px solid var(--gray500);
+  outline: none;
+}
+
+
+.cancel{
+  display: flex;
+  flex-direction: column;
+  margin-left: 469px;
+  margin-top: -180px;
+  width: 800px;
+  height: 302px;
+  padding: 32px 24px 32px 24px;
+  border-radius: 8px;
+  
+  background-color: var(--gray900);
+  border: 1px solid var(--gray500);
+}
+
+
+.modal__cancel{
+  padding: 0px 24px 30px 0px;
+  border-radius: 8px;
+  gap: 30px;
+}
+
+.paragrafh__cancel{
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__title--cancel{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+  

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <!-- css -->
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/globalStyles.css">
+    <link rel="stylesheet" href="../styles/buttons.css">
+    <link rel="stylesheet" href="../styles/dashboard.css">
+
+    <title>Dashboard</title>
+</head>
+<body>
+    <header class="header__container">
+        <div class="header__logo">
+            <img src="../image/img/Petinfo.png" alt="Logo Pet Info" class="header__icon" />
+        </div>
+        <div class="header__navigation">
+            <button id="openModal" class="header__action confirm__button" type="button">Criar publicações</button>
+            <button class="header__image"><img src="../image/img/Ellipse 1.png" alt="Foto-icon"></button>
+            
+            <div class="header__account hidden">
+                <div class="button__container">
+                    <div class="signout__group">
+                    </div>
+                </div>
+            </div>
+            <div class="header__account--after hidden"></div>
+        </div>
+    </header>
+    <section>
+        <div class="feed__container">
+            <p class="color__feed">Feed</p>
+        </div>
+    </section>
+    <section class="main__list">
+        <ul class="list__container"></ul>
+      </section>
+      <!-- modal ler conteudo completo -->
+      <dialog>
+        <dialog class="modal__postCompleted" open="">
+          <div class="postCompleted__container">
+            <div class="modal__title--container">
+              <img src="../image/img/Ellipse 1.png" alt="Foto usuario">
+              <p>Junio Chaves</p>
+            </div>
+            <div class="modal__button--container">
+              <button id="closeModalButton" onclick="closeModal()">
+                <img src="../image/img/close.svg" alt="Fechar modal" />
+              </button>
+            </div>
+            <div>
+              <p></p>
+              <p></p>
+              <p></p>
+            </div>
+          </div>
+      </dialog>  
+      <!-- Modal Adicionar -->
+      <dialog id="myModal" class="modal__controller newPost">
+        <div class="modal__container">
+          <div class="modal__title--container">
+            <p>Criando novo post</p>
+          </div>
+          <div class="modal__button--container">
+            <button id="closeModalButton" onclick="closeModal()">
+              <img src="../image/img/close.svg" alt="Fechar modal" />
+            </button>
+          </div>
+        </div>
+          <form class="modal__form">
+            <label for="Title">Título do post</label>
+            <input
+              class="input__create create__newPost"id="Title"type="text"name="title"
+              placeholder="Digite seu título"/>
+            <label for="Description">Conteúdo do post</label>
+            <textarea 
+            class="add__input create__task create__newPost"
+            name="content"
+            id="Description"
+            cols="30"
+            rows="10"
+            placeholder="Desenvolva o conteúdo do post aqui..."></textarea>
+            <div class="modal__form--submit">
+              <button id="addCancelar" class="submit__newPost2" type="submit">Cancelar</button>
+              <button id="addPublic" class="submit__newPost" type="submit">Publicar</button>
+            </div>
+          </form>
+          <!-- modal Editar -->
+      </dialog>
+      <dialog id="myModal" class="modal__controller editPost">
+        <div class="modal__container">
+          <div class="modal__title--container">
+            <p>Editar</p>
+          </div>
+          <div class="modal__button--container">
+            <button id="closeModalButton" onclick="closeModal()">
+              <img src="../image/img/close.svg" alt="Fechar modal" />
+            </button>
+          </div>
+        </div>
+          <form class="modal__form">
+            <label for="Title">Título do post</label>
+            <input
+              class="input__create create__editNewPost"id="Title"type="text"name="title"
+              placeholder="Digite seu título"/>
+            <label for="Description">Conteúdo do post</label>
+            <textarea 
+            class="create__task create__editNewPost"
+            name="description"
+            id="Description"
+            cols="70"
+            rows="40"
+            placeholder="Desenvolva o conteúdo do post aqui..."></textarea>
+            <div class="modal__form--submit">
+              <button id="addCancelar" class="submit__editNewPostClose" type="submit">Cancelar</button>
+              <button id="addPublic" class="submit__editNewPost" type="submit">Salvar Alterações</button>
+            </div>
+          </form>
+          <!-- modal cancelar -->
+      </dialog>
+      <dialog class="cancel">
+        <div class=" modal__container modal__cancel">
+          <div class="modal__title--cancel">
+            <p>Confirmação de exclusão</p>
+          </div>
+          <div class="modal__button--container">
+            <button id="closeModalButton" onclick="closeModal()">
+              <img src="../image/img/close.svg" alt="Fechar modal" />
+            </button>
+          </div>
+          <div class="paragrafh__cancel">
+            <p>Tem certeza que deseja excluir este post?</p>
+            <p>Essa ação não poderá ser desfeita, então pedimos que tenha cautela antes de concluir</p>
+          </div>
+          <div class="modal__form--submit">
+            <button id="addCancelar" class="submit__editNewPostClose" type="submit">Cancelar</button>
+            <button id="addPublic" class="submit__editNewPost" type="submit">Salvar Alterações</button>
+          </div>
+        </div>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+      <script type="module" src="../scripts/requests.js"></script>
+      <script type="module" src="../scripts/dashboard.js"></script>
+      <script type="module" src="../scripts/render.js"></script>
+
+</body>
+</html>
