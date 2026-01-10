@@ -1,5 +1,4 @@
-import { createCard } from "./render.js";
-import { createPost, requestRegister } from "./requests.js";
+import { requestRegister } from "./requests.js";
 import { toast } from "./toast.js";
 
 
@@ -9,7 +8,7 @@ const authentication = () => {
   const token = localStorage.getItem("@infoPet:token");
 
   if (token) {
-    location.replace("./src/pages/signup.html?");
+    location.replace("./src/pages/dashboard.html");
   }
 };
 
@@ -43,5 +42,3 @@ const newUser = () => {
 
 authentication()
 newUser()
-createPost()
-createCard()

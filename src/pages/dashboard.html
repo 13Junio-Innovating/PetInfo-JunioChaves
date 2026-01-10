@@ -63,13 +63,13 @@
           </div>
       </dialog>  
       <!-- Modal Adicionar -->
-      <dialog id="myModal" class="modal__controller newPost">
+      <dialog id="modalCreate" class="modal__controller newPost">
         <div class="modal__container">
           <div class="modal__title--container">
             <p>Criando novo post</p>
           </div>
           <div class="modal__button--container">
-            <button id="closeModalButton" onclick="closeModal()">
+            <button class="closeModalButton" data-modal="modalCreate">
               <img src="../image/img/close.svg" alt="Fechar modal" />
             </button>
           </div>
@@ -88,39 +88,39 @@
             rows="10"
             placeholder="Desenvolva o conteúdo do post aqui..."></textarea>
             <div class="modal__form--submit">
-              <button id="addCancelar" class="submit__newPost2" type="submit">Cancelar</button>
+              <button class="submit__newPost2 closeModalButton" data-modal="modalCreate" type="button">Cancelar</button>
               <button id="addPublic" class="submit__newPost" type="submit">Publicar</button>
             </div>
           </form>
           <!-- modal Editar -->
       </dialog>
-      <dialog id="myModal" class="modal__controller editPost">
+      <dialog id="modalEdit" class="modal__controller editPost">
         <div class="modal__container">
           <div class="modal__title--container">
             <p>Editar</p>
           </div>
           <div class="modal__button--container">
-            <button id="closeModalButton" onclick="closeModal()">
+            <button class="closeModalButton" data-modal="modalEdit">
               <img src="../image/img/close.svg" alt="Fechar modal" />
             </button>
           </div>
         </div>
           <form class="modal__form">
-            <label for="Title">Título do post</label>
+            <label for="TitleEdit">Título do post</label>
             <input
-              class="input__create create__editNewPost"id="Title"type="text"name="title"
+              class="input__create create__editNewPost"id="TitleEdit"type="text"name="title"
               placeholder="Digite seu título"/>
-            <label for="Description">Conteúdo do post</label>
+            <label for="DescriptionEdit">Conteúdo do post</label>
             <textarea 
             class="create__task create__editNewPost"
-            name="description"
-            id="Description"
+            name="content"
+            id="DescriptionEdit"
             cols="70"
             rows="40"
             placeholder="Desenvolva o conteúdo do post aqui..."></textarea>
             <div class="modal__form--submit">
-              <button id="addCancelar" class="submit__editNewPostClose" type="submit">Cancelar</button>
-              <button id="addPublic" class="submit__editNewPost" type="submit">Salvar Alterações</button>
+              <button class="submit__editNewPostClose closeModalButton" data-modal="modalEdit" type="button">Cancelar</button>
+              <button id="addPublicEdit" class="submit__editNewPost" type="submit">Salvar Alterações</button>
             </div>
           </form>
           <!-- modal cancelar -->

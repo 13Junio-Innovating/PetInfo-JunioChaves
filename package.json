@@ -1,0 +1,25 @@
+{
+  "name": "petinfo-juniochaves",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000p\u0000e\u0000t\u0000I\u0000n\u0000f\u0000o\u0000-\u0000J\u0000u\u0000n\u0000i\u0000o\u0000C\u0000h\u0000a\u0000v\u0000e\u0000s\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kenzie-Academy-Brasil-Developers/petinfobase__JunioChaves.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kenzie-Academy-Brasil-Developers/petinfobase__JunioChaves/issues"
+  },
+  "homepage": "https://github.com/Kenzie-Academy-Brasil-Developers/petinfobase__JunioChaves#readme",
+  "dependencies": {
+    "json-server": "^0.17.4",
+    "json-server-auth": "^2.1.0"
+  }
+}

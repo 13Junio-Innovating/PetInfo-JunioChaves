@@ -1,0 +1,12 @@
+{
+  "users": [
+    {
+      "email": "junio.chaves@costao.com.br",
+      "password": "$2a$10$UnNsGg3WUSF2HRDL89pJPO8Mb2GDfuRkFUpaNHGu1Of0YzrKw2ikm",
+      "username": "junio.chavess",
+      "avatar": "https://www.pexels.com/pt-br/foto/gatinho-branco-e-cinza-em-tecido-estampado-leopardo-marrom-e-preto-45201/",
+      "id": 1
+    }
+  ],
+  "posts": []
+}
